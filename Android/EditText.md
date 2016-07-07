@@ -1,6 +1,6 @@
 # EditText
 
-### Attributes
+### Example Source Code
 
 ```xml
 <EditText
@@ -12,6 +12,8 @@
   />
 
 ```
+
+### Attributes
 
 - maxLength
 
