@@ -1,8 +1,8 @@
 # Realm
 
-## Realm Gradle 설정
+### Realm Gradle
 
-### build.gradle(Project)
+##### build.gradle(Project)
 
 ```gradle
 buildscript {
@@ -16,26 +16,23 @@ buildscript {
 }
 
 ```
-### build.gradle(Module: app)
+##### build.gradle(Module: app)
 
 ```gradle
 apply plugin: 'realm-android'
 ```
 
-## MyApplication Class 추가
+### MyApplication Class
 
-Application Class에서 Realm 설정
-
-### AndroidManifest.xml 수정
+##### AndroidManifest.xml
 ```xml
 <application
-    android:name=".application.MyApplication"
+    android:name=".MyApplication"
     ...>
     ...
 </application>
 
 ```
-### Application Package 속 MyApplication Class 추가
 ```java
 public class MyApplication extends Application {
 
@@ -48,6 +45,3 @@ public class MyApplication extends Application {
     }
 }
 ```
-애플리케이션 시작시 MyApplication.onCreate 실행
-
-onCreate에서 기본 RealmConfiguration 설정

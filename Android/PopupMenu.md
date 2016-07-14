@@ -4,10 +4,10 @@
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/menu1" android:title="메뉴 1" />
-    <item android:id="@+id/menu2" android:title="메뉴 2" />
-    <item android:id="@+id/menu3" android:title="메뉴 3" />
-    <item android:id="@+id/menu4" android:title="메뉴 4" />
+    <item android:id="@+id/menu1" android:title="Menu 1" />
+    <item android:id="@+id/menu2" android:title="Menu 2" />
+    <item android:id="@+id/menu3" android:title="Menu 3" />
+    <item android:id="@+id/menu4" android:title="Menu 4" />
 </menu>
 ```
 

@@ -2,13 +2,13 @@
 
 ### Floating Hint EditText
 
-- Dependency in gradle
+##### Dependency in gradle
 
 ```gradle
 compile 'com.android.support:design:22.2.0'
 ```
 
-- XML
+##### XML
 
 ```xml
 <android.support.design.widget.TextInputLayout
