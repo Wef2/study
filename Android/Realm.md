@@ -40,7 +40,9 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         RealmConfiguration config = new RealmConfiguration.Builder(this).build();
-        Realm.deleteRealm(config);
+
+        // DELETE CONFIGURATION?
+        // Realm.deleteRealm(config);
         Realm.setDefaultConfiguration(config);
     }
 }
