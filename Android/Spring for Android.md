@@ -61,6 +61,8 @@ class Person{
 ```java
 class Task extends AsyncTask<Void, Void, List<Person>> {
 
+        private String REQUEST_URL = "http://www.example.com"
+
         @Override
         protected List<Person> doInBackground(Void... params) {
             try {
@@ -79,4 +81,28 @@ class Task extends AsyncTask<Void, Void, List<Person>> {
 //            Do something                
         }
     }
+```
+
+### UTF-8
+
+```java
+public class ExampleTask extends AsyncTask<Void, Void, ResponseEntity<String>> {
+
+    private String REQUEST_URL = "http://www.example.com"
+    private String id = "id";
+    private String password = "password";
+
+    @Override
+    protected ResponseEntity<String> doInBackground(Void... params) {
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.getMessageConverters().add(0, new StringHttpMessageConverter(Charset.forName("UTF-8")));
+
+        MultiValueMap<String, String> values = new LinkedMultiValueMap<>();
+        values.add("id", id);
+        values.add("password", password);
+        ResponseEntity<String> responseEntity = restTemplate.postForEntity(REQUEST_URL, values, String.class);
+        System.out.println(responseEntity);
+        return responseEntity;
+    }
+}
 ```
