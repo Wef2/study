@@ -13,6 +13,13 @@
 
 ```
 
+```java
+
+EditText editText = (EditText) findViewById(R.id.edit_text);
+editText.setImeOptions(EditorInfo.IME_ACTION_DONE);
+
+```
+
 ### Attributes
 
 - maxLength
