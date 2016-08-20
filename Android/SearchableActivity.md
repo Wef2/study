@@ -4,12 +4,14 @@
 ##### res/menu/search_menu.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/search"
-          android:title="@string/search_title"
-          android:icon="@drawable/ic_search"
-          android:showAsAction="collapseActionView|ifRoom"
-          android:actionViewClass="android.widget.SearchView" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_title"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom" />
 </menu>
 ```
 
@@ -62,3 +64,4 @@ public class SearchResultsActivity extends AppCompatActivity {
 
 https://developer.android.com/training/search/setup.html#create-sa
 https://developer.android.com/guide/topics/search/search-dialog.html
+https://www.youtube.com/watch?v=9OWmnYPX1uc
