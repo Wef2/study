@@ -1,7 +1,7 @@
 # SearchableActivity
 
 ### Add the Search View to the App Bar
-##### res/menu/options_menu.xml
+##### res/menu/search_menu.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
